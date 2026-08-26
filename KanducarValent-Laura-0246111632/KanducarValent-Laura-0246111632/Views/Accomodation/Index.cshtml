@@ -1,0 +1,28 @@
+﻿@model AccomodationFilterModel
+@{
+    ViewData["Title"] = "Smještaj";
+}
+<section class="accomodation-section">
+    <div class="acc-dio">
+        <h1>Smještajne jedinice Farmice</h1>
+        <p class="alert-light">Istražite svoju okolinu u popisu smještaja koji mogu postati vaš dom preko vikenda!
+            Iskoristite filter i pogledajte koji su smještaji dostupni za datume koje želite provesti na Farmici!
+        </p>
+    </div>
+</section>
+
+
+<div class="filter-dio">
+    <partial name="_AccomodationFilter" model="Model" />
+</div>
+
+@if (Model.NoResult)
+{
+    <div class="upozorenje-kombinacija">
+        <p>Nemamo pojedinačni smještaj za @Model.Capacity osoba za odabrane datume. Pogledajte manje smještaje ispod — možete rezervirati dva zasebno.</p>
+    </div>
+}
+
+<div id="accomodation-list-container">
+    @Html.Partial("_IndexTable", Model)
+</div>

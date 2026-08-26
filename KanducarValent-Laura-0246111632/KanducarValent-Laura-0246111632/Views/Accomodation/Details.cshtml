@@ -1,0 +1,83 @@
+﻿@model Accomodation
+
+<div class="acc-dio">
+    <h1>@Model.Name</h1>
+</div>
+
+<div class="dogadaj-naslovnica">
+    <div class="naslovnica-dio">
+        <img src="@Model.ImageUrl" alt="slika-smjestaj">
+    </div>
+</div>
+
+
+<section class="uvod" id="section-istrazi">
+    <div class="uvod-dio">
+        <p class="uvod-paragraph animate-right">
+            @Model.Description
+        </p>
+    </div>
+</section>
+
+<section class="details-info">
+    <p>Kapacitet: @Model.Capacity osoba · @Model.Size m²</p>
+    <p class="cijena">@Model.PricePerNight € / noć</p>
+</section>
+
+<section class="uvod" id="section-istrazi">
+    <div class="uvod-dio">
+        <img src="@Model.PoolImg" alt="pool" id="bazen_udaljenost"/>
+        <p class="uvod-paragraph animate-right">
+            @Model.Name nalazi se na @Model.PoolDistance metara od bazena. Može se doći autom, ali pošto je to 7 minuta hoda,a
+            preporučamo da odete pješke putem koji je označen na slici. Bazen se nalazi podalje od svih kuća na poptunoj čistini.
+            Lokaciju smo izabrali kako bi gosti imali mir i privatnost s obzirom na šumu koja je jedino što okružuje bazen.
+        </p>
+    </div>
+</section>
+
+@if (ViewBag.StartDate != null && ViewBag.EndDate != null)
+{
+    <a asp-controller="Reservation"
+       asp-action="Create"
+       asp-route-accomodationId="@Model.ID"
+       asp-route-startDate="@(((DateTime)ViewBag.StartDate).ToString("yyyy-MM-dd"))"
+       asp-route-endDate="@(((DateTime)ViewBag.EndDate).ToString("yyyy-MM-dd"))"
+       class="link-button-reserve">
+        Rezerviraj
+    </a>
+}
+
+@if (Model.Photo.Any())
+{
+    <div class="arhiva-slika">
+        @foreach (var photo in Model.Photo)
+        {
+            <img src="@photo.ImageUrl" alt="@Model.Name" />
+        }
+    </div>
+}
+
+@{
+    var reviews = (List<Review>)ViewBag.Reviews;
+}
+
+@if (reviews.Any())
+{
+    <section class="recenzije-sekcija">
+        <div class="acc-dio">
+            <h1>@Model.Name</h1>
+        </div>
+        <div class="recenzije-lista">
+            @foreach (var review in reviews)
+            {
+                <div class="reviews">
+                    <h3>@review.Title</h3>
+                    <p>
+                        Objekt @review.Accomodation?.Name je gost @review.User?.UserName ocijenio sa @review.Rating <br />
+                        Rekli su: @review.Content
+                    </p>
+                </div>
+            }
+        </div>
+    </section>
+}

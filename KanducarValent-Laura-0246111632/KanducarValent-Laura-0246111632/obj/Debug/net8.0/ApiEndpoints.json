@@ -1,0 +1,97 @@
+[
+  {
+    "ContainingType": "KanducarValent_Laura_0246111632.Controllers.AccomodationAPIController",
+    "Method": "Get",
+    "RelativePath": "api/acc",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KanducarValent_Laura_0246111632.Controllers.AccomodationAPIController",
+    "Method": "Post",
+    "RelativePath": "api/acc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Rad.Model.AccomodationDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KanducarValent_Laura_0246111632.Controllers.AccomodationAPIController",
+    "Method": "Get",
+    "RelativePath": "api/acc/{id}",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KanducarValent_Laura_0246111632.Controllers.AccomodationAPIController",
+    "Method": "Put",
+    "RelativePath": "api/acc/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "Rad.Model.AccomodationDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KanducarValent_Laura_0246111632.Controllers.AccomodationAPIController",
+    "Method": "Delete",
+    "RelativePath": "api/acc/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KanducarValent_Laura_0246111632.Controllers.AccomodationAPIController",
+    "Method": "Get",
+    "RelativePath": "api/acc/pretraga/{q}",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

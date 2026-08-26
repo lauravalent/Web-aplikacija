@@ -1,0 +1,8 @@
+﻿@model List<Rad.Model.Review>
+
+@{
+    ViewData["Title"] = "Moje recenzije";
+}
+<div id="reviews-index">
+    @Html.Partial("_IndexTable", Model)
+</div>

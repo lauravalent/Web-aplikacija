@@ -1,0 +1,48 @@
+﻿@model List<Review>
+
+
+<div class="reviews-dio">
+    @if (User.IsInRole("Owner"))
+    {
+        <section class="accomodation-section">
+            <div class="acc-dio">
+                <h1>Recenzije gostiju</h1>
+                <p class="alert-light">
+                    Ovdje su rezervacije Vaših gostiju za boravke koje su proveli na Farmici!
+                </p>
+            </div>
+        </section>
+        @foreach (var review in Model)
+        {
+            <div class="reviews">
+                <h3>@review.Title</h3>
+                <p>
+                    Objekt @review.Accomodation?.Name je gost @review.User?.UserName ocijenio sa @review.Rating <br />
+                    Rekli su: @review.Content
+                </p>
+            </div>
+        }
+    }
+    else
+    {
+        <section class="accomodation-section">
+            <div class="acc-dio">
+                <h1>Vaše recenzije!</h1>
+                <p>Ovdje su Vaše recenzije za boravke koje ste proveli na Farmici!</p>
+                <a asp-action="Create" class="link-button-reserve">Dodaj novu recenziju</a>
+            </div>
+        </section>
+        @foreach (var review in Model)
+        {
+            <div class="reviews">
+                <h3>@review.Title</h3>
+                <p>Objekt @review.Accomodation?.Name ste ocijenili sa @review.Rating <br />
+                   Rekli ste: @review.Content
+                </p>
+                <a asp-action="Edit" asp-route-id="@review.ID" class="link-button-edit">Uredi</a>
+            </div>
+        }
+    }
+</div>
+
+

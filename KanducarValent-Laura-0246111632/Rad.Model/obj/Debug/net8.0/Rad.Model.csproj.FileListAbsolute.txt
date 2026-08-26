@@ -1,0 +1,60 @@
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.deps.json
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfoInputs.cache
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfo.cs
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.CoreCompileInputs.cache
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\refint\Rad.Model.dll
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\ref\Rad.Model.dll
+C:\Users\cepel\source\repos\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.AssemblyReference.cache
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.deps.json
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.AssemblyReference.cache
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfoInputs.cache
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfo.cs
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.CoreCompileInputs.cache
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\refint\Rad.Model.dll
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\Downloads\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\ref\Rad.Model.dll
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.deps.json
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.AssemblyReference.cache
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfoInputs.cache
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfo.cs
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.CoreCompileInputs.cache
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\refint\Rad.Model.dll
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\OneDrive\Radna površina\prez\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\ref\Rad.Model.dll
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.deps.json
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.AssemblyReference.cache
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfoInputs.cache
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfo.cs
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.CoreCompileInputs.cache
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\refint\Rad.Model.dll
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\OneDrive\KanducarValent-Laura-0246111632 (1)\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\ref\Rad.Model.dll
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.deps.json
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\bin\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.AssemblyReference.cache
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfoInputs.cache
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.AssemblyInfo.cs
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.csproj.CoreCompileInputs.cache
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.dll
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\refint\Rad.Model.dll
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\Rad.Model.pdb
+C:\Users\cepel\OneDrive\Radna površina\KanducarValent-Laura-0246111632\Rad.Model\obj\Debug\net8.0\ref\Rad.Model.dll

@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KanducarValent_Laura_0246111632</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..10001,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://kit.fontawesome.com/572a5d15ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="logo">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" alt="logo" id="logo">
+                </a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-linkovi" id="nav-linkovi">
+                <li>
+                    <a asp-area="" asp-controller="Accomodation" asp-action="Index">Smještaj</a>
+                </li>
+                @if (User.IsInRole("Guest") || User.IsInRole("Owner"))
+                {
+                    <li>
+                        <a asp-area="" asp-controller="Review" asp-action="Index">Recenzije</a>
+                    </li>
+                }
+                </li>
+                @if (User.IsInRole("Guest") || User.IsInRole("Owner"))
+                {
+                    <li>
+                        <a asp-area="" asp-controller="Reservation" asp-action="Index">Rezervacije</a>
+                    </li>
+                }
+                <li>
+                    <a asp-area="" asp-controller="Contact" asp-action="Index">Kontakt</a>
+                </li>
+                
+                <partial name="_LoginPartial" />
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+            @RenderBody()
+    </div>
+
+    
+
+    <footer class="site-footer">
+        <div class="footer-dio">
+
+            <div class="footer-linkovi">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" alt="logo" id="logo">
+                </a>
+                <a asp-area="" asp-controller="Accomodation" asp-action="Index">Smještaj</a>
+                @if (User.IsInRole("Guest") || User.IsInRole("Owner"))
+                {
+                    <a asp-area="" asp-controller="Review" asp-action="Index">Recenzije</a>
+                }
+                @if (User.IsInRole("Guest") || User.IsInRole("Owner"))
+                {
+                    <a asp-area="" asp-controller="Reservation" asp-action="Index">Rezervacije</a>
+                }
+                <a asp-area="" asp-controller="Contact" asp-action="Index">Kontakt</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com/ohoho.festival/?locale=hr_HR" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i> Farmica Seoski Turizam<br>
+                </a>
+                <a href="mailto:cepelovecki@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-envelope"></i>info@farmica.hr<br>
+                </a>
+                <a href="https://www.instagram.com/ohohofestival/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i> farmicaseoskiturizam<br>
+                </a>
+                <a href="#karta" class="karta-poveznica"><i class="fa-solid fa-location-dot lokacija"></i> Farmica Seoski Turizam,<br> Čepelovečki breg, 216</a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>Farmica seoski turizam - OPG Kandučar</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const scrollElements = document.querySelectorAll('.animate-left, .animate-right, .animate-up');
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+              }
+               else {
+              entry.target.classList.remove('active');
+            }
+            });
+          }, {
+            threshold: 0.3
+          });
+
+          scrollElements.forEach(el => observer.observe(el));
+        });
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-linkovi");
+
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

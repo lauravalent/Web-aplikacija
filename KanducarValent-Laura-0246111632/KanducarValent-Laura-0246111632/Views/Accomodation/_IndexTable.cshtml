@@ -1,0 +1,61 @@
+﻿@model AccomodationFilterModel
+
+@if (!Model.Results.Any())
+{
+    <p class="nema-rezultata">Nema dostupnih smještaja za odabrane kriterije.</p>
+}
+else
+{
+    <section class="smjestaj" id="section-istrazi">
+        @foreach (var item in Model.Results)
+        {
+            
+            <div class="smjestaj-dio">
+                <div class="slika-smjestaj">
+                    <a asp-action="Details" asp-route-id="@item.ID"
+                       asp-route-startDate="@Model.StartDate?.ToString("yyyy-MM-dd")"
+                       asp-route-endDate="@Model.EndDate?.ToString("yyyy-MM-dd")"
+                       asp-route-numberOfGuests="@Model.Capacity">
+                        <img src="@item.ImageUrl" alt="@item.Name" />
+                    </a>
+                </div>             
+                <div class="rezultat-info">
+                    <h3>@item.Name</h3>
+                    <p>@item.Description</p>
+                    <p>Kapacitet: @item.Capacity osoba · @item.Size m²</p>
+                    <p class="cijena">@item.PricePerNight € / noć</p>
+                    <div class="rezultat-akcije">
+                        <a asp-action="Details" asp-route-id="@item.ID" class="link-button-details"
+                           asp-route-startDate="@Model.StartDate?.ToString("yyyy-MM-dd")"
+                           asp-route-endDate="@Model.EndDate?.ToString("yyyy-MM-dd")"
+                           asp-route-numberOfGuests="@Model.Capacity">Pogledaj više</a>
+                        @if (Model.StartDate.HasValue && Model.EndDate.HasValue && Model.Capacity != 0 && User.IsInRole("Guest") && Model.EndDate > Model.StartDate)
+                        {
+                            <a asp-action="Create" asp-controller="Reservation"
+                               asp-route-accomodationId="@item.ID"
+                               asp-route-startDate="@Model.StartDate?.ToString("yyyy-MM-dd")"
+                               asp-route-endDate="@Model.EndDate?.ToString("yyyy-MM-dd")"
+                               asp-route-numberOfGuests="@Model.Capacity"
+                               class="link-button-reserve">
+                                Rezerviraj
+                            </a>
+                        }
+                        @if (User.IsInRole("Owner"))
+                        {
+                            <a asp-action="Edit" asp-controller="Accomodation"
+                               asp-route-id="@item.ID"
+                               class="link-button-edit">
+                                Uredi
+                            </a>
+                        }
+
+
+                    </div>
+                </div>
+            </div>
+            
+            
+        }
+    </section>
+   
+}

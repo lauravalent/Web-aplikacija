@@ -1,0 +1,63 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using System.Security.Claims
+@inject UserManager<AppUser> UserManager;
+@model List<Reservation>
+<head>
+	<link rel="stylesheet" href="~/css/style.css">
+</head>
+
+<div class="reservations-dio">
+	@if (User.IsInRole("Owner"))
+	{
+		<section class="accomodation-section">
+			<div class="acc-dio">
+				<h1>Rezervacije gostiju</h1>
+				<p class="alert-light">
+					Ovdje su rezervacije Vaših gostiju, a također možete dodati vanjske rezervacije koje možete uređivati!
+				</p>
+				<a asp-action="CreateManual" asp-controller="Reservation" class="link-button-reserve">Rezerviraj</a>
+			</div>
+		</section>
+		@foreach (var reservation in Model)
+		{
+			<div class="reservation">
+				<h3>@reservation.Accomodation?.Name</h3>
+				<p>Početak: <span class="bold">@reservation.StartDate?.ToShortDateString()</span></p>
+				<p>Kraj: <span class="bold">@reservation.EndDate?.ToShortDateString()</span></p>
+				<p>Broj gostiju: @reservation.NumberOfGuests</p>
+				<p>Gostu @reservation.GuestName kontaktirajte preko @reservation.GuestEmail ili na broj telefona @reservation.GuestPhone</p>
+				<p>@DateTime.Now</p>
+				@if (reservation.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier) && reservation.StartDate > DateTime.Now)
+				{
+					<a asp-action="EditManual" asp-route-id="@reservation.ID" class="link-button-edit">Uredi</a>
+					<a asp-action="Delete" asp-route-id="@reservation.ID" class="btn-delete">Obriši</a>
+				}
+			</div>
+		}
+	}
+	else
+	{
+		<section class="accomodation-section">
+			<div class="acc-dio">
+				<h1>Vaše rezervacije</h1>
+				<p>Ovdje su prikazane Vaše rezervacije, a koje možete uređivati!</p>
+			</div>
+		</section>
+		@foreach (var reservation in Model)
+		{
+			<div class="reservation">
+				<h3>@reservation.Accomodation?.Name</h3>
+				<p>Početak: @reservation.StartDate?.ToShortDateString()</p>
+				<p>Kraj: @reservation.EndDate?.ToShortDateString()</p>
+				<p>Broj gostiju: @reservation.NumberOfGuests</p>
+				@if(reservation.StartDate > DateTime.Now)
+				{
+					<a asp-action="Edit" asp-route-id="@reservation.ID" class="link-button-edit">Uredi</a>
+					<a asp-action="Delete" asp-route-id="@reservation.ID" class="btn-delete">Obriši</a>
+				}
+				
+			</div>
+		}
+	}
+</div>
+

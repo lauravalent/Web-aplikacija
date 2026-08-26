@@ -1,0 +1,14 @@
+﻿@model Reservation
+
+<div class="potvrda">
+    <div class="potvrda-dio">
+        <h3>Potvrda brisanja rezervacije</h3>
+        <p>Jeste li sigurni da želite obrisati ovu rezervaciju?</p>
+        <p>@Model.Accomodation.Name u razdoblju od @Model.StartDate?.ToString("dd.MM.yyyy") do @Model.EndDate?.ToString("dd.MM.yyyy")</p>
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="ID" />
+            <button type="submit" class="btn-delete">Da, obriši</button>
+            <a asp-action="Index" class="link-button-cancel">Odustani</a>
+        </form>
+    </div>
+</div>

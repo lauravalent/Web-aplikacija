@@ -1,0 +1,34 @@
+﻿@model Rad.Model.Reservation
+@using System.Globalization
+@{
+	var pattern = System.Threading.Thread.CurrentThread.CurrentCulture.DateTimeFormat.ShortDatePattern.ToLower();
+	pattern = pattern.Replace("DD", "D").Replace("D", "DD");
+	pattern = pattern.Replace("MM", "M").Replace("M", "MM");
+}
+
+
+<input type="hidden" asp-for="AccomodationID" />
+
+<label class="control-label">Početni datum</label>
+<input type="text" asp-for="StartDate" readonly />
+
+<label class="control-label">Krajnji datum</label>
+<input type="text" asp-for="EndDate" readonly/>
+
+
+<label asp-for="NumberOfGuests">Broj gostiju*</label>
+<input asp-for="NumberOfGuests" type="number" min="1" readonly>
+<span asp-validation-for="NumberOfGuests" class="text-danger"></span>
+
+<label asp-for="GuestName">Ime i prezime*</label>
+<input asp-for="GuestName" type="text" placeholder="Tvoje ime i prezime" required>
+<span asp-validation-for="GuestName" class="text-danger"></span>
+
+<label asp-for="GuestEmail">Email*</label>
+<input asp-for="GuestEmail" type="email" placeholder="Tvoj e-mail" required>
+<span asp-validation-for="GuestEmail" class="text-danger"></span>
+
+<label asp-for="GuestPhone">Telefon*</label>
+<input asp-for="GuestPhone" type="tel" placeholder="Tvoj broj telefona" required>
+
+<button type="submit">Rezerviraj</button>

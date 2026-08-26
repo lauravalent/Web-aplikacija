@@ -1,0 +1,19 @@
+﻿@model Rad.Model.Accomodation
+
+
+<label asp-for="Name">Ime smještaja: </label>
+<input asp-for="Name" class="form-control" />
+
+<label asp-for="Capacity">Kapacitet: </label>
+<input asp-for="Capacity" class="form-control" />
+
+<label asp-for="Size">Površina: </label>
+<input asp-for="Size" class="form-control" />
+
+<label asp-for="Description">Opis</label>
+<textarea asp-for="Description"></textarea>
+
+<label asp-for="PoolDistance">Udaljenost od bazena: </label>
+<input asp-for="PoolDistance" />
+
+<input type="submit" value="Spremi" class="btn btn-outline-success" />

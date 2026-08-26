@@ -1,0 +1,31 @@
+﻿@model Rad.Model.Reservation
+
+<label asp-for="AccomodationID">Smještaj*</label>
+<select asp-for="AccomodationID" asp-items="ViewBag.Accomodations" required>
+    <option value="">Odaberi smještaj</option>
+</select>
+<span asp-validation-for="AccomodationID" class="text-danger"></span>
+
+<label class="control-label">Početni datum</label>
+<input type="date" asp-for="StartDate"/>
+
+<label class="control-label">Krajnji datum</label>
+<input type="date" asp-for="EndDate"/>
+
+
+<label asp-for="NumberOfGuests">Broj gostiju*</label>
+<input asp-for="NumberOfGuests" type="number" min="1">
+<span asp-validation-for="NumberOfGuests" class="text-danger"></span>
+
+<label asp-for="GuestName">Ime i prezime gosta*</label>
+<input asp-for="GuestName" type="text" placeholder="Ime i prezime gosta" required>
+<span asp-validation-for="GuestName" class="text-danger"></span>
+
+<label asp-for="GuestEmail">Email gosta*</label>
+<input asp-for="GuestEmail" type="email" placeholder="E-mail gosta" required>
+<span asp-validation-for="GuestEmail" class="text-danger"></span>
+
+<label asp-for="GuestPhone">Telefon gosta*</label>
+<input asp-for="GuestPhone" type="tel" placeholder="Broj telefona gosta" required>
+
+<button type="submit">Spremi</button>

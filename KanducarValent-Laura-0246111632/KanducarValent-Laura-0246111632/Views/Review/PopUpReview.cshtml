@@ -1,0 +1,39 @@
+﻿@model Review
+
+@if (ViewBag.ReservationValue != null)
+{
+    <label>Rezervacija:</label>
+    <input value="@ViewBag.ReservationValue" disabled>
+    <input type="hidden" asp-for="ReservationID" />
+}
+else
+{
+    <label asp-for="ReservationID">Rezervacija:</label>
+    <select asp-for="ReservationID" asp-items="ViewBag.NonreviewedReservations">
+        <option value="">Odaberi</option>
+    </select>
+    <span asp-validation-for="ReservationID" class="text-danger"></span>
+}
+
+<label asp-for="Title">Naslov*</label>
+<input asp-for="Title" type="text" placeholder="Naslov recenzije" required>
+<span asp-validation-for="Title" class="text-danger"></span>
+
+<label asp-for="Content">Sadržaj*</label>
+<textarea asp-for="Content" placeholder="Podijeli svoje iskustvo" rows="5" required></textarea>
+<span asp-validation-for="Content" class="text-danger"></span>
+
+<label asp-for="Rating">Ocjena*</label>
+<input asp-for="Rating" type="number" min="1" max="5" placeholder="1-5" required>
+<span asp-validation-for="Rating" class="text-danger"></span>
+
+<button type="submit">Pošalji recenziju</button>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

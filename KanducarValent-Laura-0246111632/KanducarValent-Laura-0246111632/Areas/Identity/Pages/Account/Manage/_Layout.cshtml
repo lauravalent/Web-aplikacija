@@ -1,0 +1,27 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout !=  null)
+    {
+        Layout = parentLayout.ToString();
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+<section class="accomodation-section">
+    <div class="acc-dio">
+        <h1>Upravljajte svojim profilom</h1>        
+    </div>
+    <div class="profile-manage">
+        <h1>Promijenite postavke svog računa</h1>
+        <partial name="_ManageNav" />
+        @RenderBody()
+    </div>    
+</section>
+
+
+
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}
