@@ -25,7 +25,7 @@
 				<p>Početak: <span class="bold">@reservation.StartDate?.ToShortDateString()</span></p>
 				<p>Kraj: <span class="bold">@reservation.EndDate?.ToShortDateString()</span></p>
 				<p>Broj gostiju: @reservation.NumberOfGuests</p>
-				<p>Gostu @reservation.GuestName kontaktirajte preko @reservation.GuestEmail ili na broj telefona @reservation.GuestPhone</p>
+				<p>Gosta @reservation.GuestName kontaktirajte preko @reservation.GuestEmail ili na broj telefona @reservation.GuestPhone</p>
 				<p>@DateTime.Now</p>
 				@if (reservation.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier) && reservation.StartDate > DateTime.Now)
 				{
